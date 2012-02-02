@@ -26,7 +26,7 @@
     <!--        BASE DEL SISTEMA-->
     <!--property name="hibernate.show_sql">true</property-->
         <property name="hibernate.format_sql">true</property>
-        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.show_sql">true</property>
         <mapping class="com.jswitch.base.modelo.entidades.Empresa"/>
         <mapping class="com.jswitch.base.modelo.entidades.Licencia"/>
         <mapping class="com.jswitch.base.modelo.entidades.Usuario"/>
@@ -114,6 +114,9 @@
         <mapping class="com.jswitch.configuracion.modelo.dominio.patologias.Tratamiento"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.Cobertura"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.PlazoEspera"/>
+            <!--        configuracion -->
+        <mapping class="com.jswitch.vistasbd.SumaOrden"/>
+        <mapping class="com.jswitch.vistasbd.SumaDetalle"/>
         <mapping class="com.jswitch.vistasbd.Agotamiento"/>
         <mapping class="com.jswitch.vistasbd.vista1"/>
     </session-factory>
