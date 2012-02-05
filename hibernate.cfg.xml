@@ -35,7 +35,6 @@
         <mapping class="com.jswitch.base.modelo.entidades.NotaTecnica"/>
         <mapping class="com.jswitch.base.modelo.entidades.TipoDocumento"/>
         <mapping class="com.jswitch.base.modelo.entidades.Documento"/>
-        <mapping class="com.jswitch.base.modelo.entidades.ValoresEstandares"/>
         <mapping class="com.jswitch.base.modelo.entidades.CalendarioBancario"/>
         <mapping class="com.jswitch.base.modelo.entidades.auditoria.AuditLogRecord"/>
         <mapping class="com.jswitch.base.modelo.entidades.helpcenter.maestra.Mensaje"/>
