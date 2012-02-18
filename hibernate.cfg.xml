@@ -5,6 +5,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
         <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/fastsj</property>
+        <!-- <property name="hibernate.connection.url">jdbc:postgresql://172.24.24.195:5432/fastsj</property> -->
         <property name="hibernate.connection.username">postgres</property>
         <property name="hibernate.connection.password">claveja</property>
     <!--
@@ -19,14 +20,14 @@
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/fastsj</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">claveja</property>
+        <property name="hibernate.connection.password"></property>
         -->
         <property name="hibernate.connection.pool_size">1</property>
         <property name="hibernate.id.new_generator_mappings">true</property>
     <!--        BASE DEL SISTEMA-->
     <!--property name="hibernate.show_sql">true</property-->
-        <property name="hibernate.format_sql">false</property>
-        <property name="hibernate.show_sql">false</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hibernate.show_sql">true</property>
         <mapping class="com.jswitch.base.modelo.entidades.Empresa"/>
         <mapping class="com.jswitch.base.modelo.entidades.Licencia"/>
         <mapping class="com.jswitch.base.modelo.entidades.Usuario"/>
@@ -75,6 +76,7 @@
         <mapping class="com.jswitch.asegurados.modelo.dominio.Parentesco"/>
         <mapping class="com.jswitch.asegurados.modelo.dominio.Departamento"/>
         <mapping class="com.jswitch.asegurados.modelo.dominio.TipoContrato"/>
+        <mapping class="com.jswitch.asegurados.modelo.transaccional.Revision"/>
     <!--        pagos     -->
         <mapping class="com.jswitch.pagos.modelo.dominio.ConceptoSENIAT"/>
         <mapping class="com.jswitch.pagos.modelo.maestra.OrdenDePago"/>
@@ -108,6 +110,7 @@
         <mapping class="com.jswitch.configuracion.modelo.transaccional.SumaAsegurada"/>
         <mapping class="com.jswitch.configuracion.modelo.transaccional.SumaAmparada"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.Ramo"/>
+        <mapping class="com.jswitch.configuracion.modelo.dominio.PartidaPresupuestaria"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.patologias.Especialidad"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.patologias.Diagnostico"/>
         <mapping class="com.jswitch.configuracion.modelo.dominio.patologias.Tratamiento"/>
@@ -118,6 +121,8 @@
         <mapping class="com.jswitch.vistasbd.SumaOrden"/>
         <mapping class="com.jswitch.vistasbd.SumaDetalle"/>
         <mapping class="com.jswitch.vistasbd.SumaFactura"/>
+        <mapping class="com.jswitch.vistasbd.SumaPartida"/>
         <mapping class="com.jswitch.vistasbd.Agotamiento"/>
+        <mapping class="com.jswitch.vistasbd.ListaDiagnostico"/>
     </session-factory>
 </hibernate-configuration>
