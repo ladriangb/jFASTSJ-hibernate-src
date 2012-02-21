@@ -121,6 +121,7 @@
         <mapping class="com.jswitch.vistasbd.SumaOrden"/>
         <mapping class="com.jswitch.vistasbd.SumaDetalle"/>
         <mapping class="com.jswitch.vistasbd.SumaFactura"/>
+        <mapping class="com.jswitch.vistasbd.SumaDesgloseCobertura"/>
         <mapping class="com.jswitch.vistasbd.SumaPartida"/>
         <mapping class="com.jswitch.vistasbd.Agotamiento"/>
         <mapping class="com.jswitch.vistasbd.ListaDiagnostico"/>
