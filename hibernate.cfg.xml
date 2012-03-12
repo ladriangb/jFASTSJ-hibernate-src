@@ -27,7 +27,7 @@
     <!--        BASE DEL SISTEMA-->
     <!--property name="hibernate.show_sql">true</property-->
         <property name="hibernate.format_sql">true</property>
-        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.show_sql">false</property>
         <mapping class="com.jswitch.base.modelo.entidades.Empresa"/>
         <mapping class="com.jswitch.base.modelo.entidades.Licencia"/>
         <mapping class="com.jswitch.base.modelo.entidades.Usuario"/>
@@ -123,6 +123,7 @@
         <mapping class="com.jswitch.vistasbd.SumaFactura"/>
         <mapping class="com.jswitch.vistasbd.SumaDesgloseCobertura"/>
         <mapping class="com.jswitch.vistasbd.SumaPartida"/>
+        <mapping class="com.jswitch.vistasbd.SumaPartidaRemesa"/>
         <mapping class="com.jswitch.vistasbd.Agotamiento"/>
         <mapping class="com.jswitch.vistasbd.ListaDiagnostico"/>
     </session-factory>
